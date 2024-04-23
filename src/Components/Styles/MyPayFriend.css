@@ -1,0 +1,42 @@
+.wrap {
+  width: 100%;
+  min-height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.pay-container {
+  width: 80%;
+  min-height: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canPayMoney {
+  width: 320px;
+  border: 0.5px solid #dddddd;
+  display: flex;
+  border-bottom: none;
+  border-radius: 6px;
+  margin-bottom: -12px;
+  justify-content: center;
+  align-items: center;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  padding: 12px 0px;
+  text-align: left;
+}
+
+/* .canPayMoneyView {
+  margin-bottom: 100px;
+} */
+
+#useMoney {
+  width: 320px;
+  margin-bottom: 2rem;
+  border-radius: 0px 0px 6px 6px;
+  padding: 12px 0px;
+  text-align: center;
+}
