@@ -93,14 +93,16 @@ const AccountBookScreen = () => {
           placeholder="가격을 입력하세요"
         />
       </div>
-      <button
-        type="button"
-        onClick={inputItemListHandler}
-        class="btn btn-light"
-        id="button-1"
-      >
-        추가
-      </button>
+      <div className="button-1-wrap">
+        <button
+          type="button"
+          onClick={inputItemListHandler}
+          class="btn btn-light"
+          id="button-1"
+        >
+          추가
+        </button>
+      </div>
 
       <div className="payItemList-container">
         <table className="table table-hover">
