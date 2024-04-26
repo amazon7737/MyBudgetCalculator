@@ -1,14 +1,14 @@
-.Calculator {
+/* .Calculator {
   display: flex;
   flex-direction: row;
-  /* padding-right: 8px; */
+  padding-right: 8px;
 }
 
 #item,
 #money {
   margin: 0px 4px;
-}
-
+} */
+/* 
 .payItemList-container {
   width: 80%;
   height: 50%;
@@ -29,4 +29,4 @@
 .item-list {
   display: flex;
   flex-direction: column;
-}
+} */

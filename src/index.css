@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  animation: FadeIn 1s;
 }
 
 /* body {
@@ -21,3 +22,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
