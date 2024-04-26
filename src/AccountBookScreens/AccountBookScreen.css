@@ -1,0 +1,32 @@
+.Calculator {
+  display: flex;
+  flex-direction: row;
+  /* padding-right: 8px; */
+}
+
+#item,
+#money {
+  margin: 0px 4px;
+}
+
+.payItemList-container {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-1 {
+  border: 0.5px solid #dddddd;
+  box-shadow: #dddddd 1px 1px 4px 1px;
+  margin: 8px;
+  margin-bottom: 24px;
+  width: 414px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+}

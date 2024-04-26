@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Styles from "./BudgetScreens.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const BudgetScreen = () => {
+  const navigate = useNavigate();
+
   const [keyValue, setKeyValue] = useState("");
 
   // 키패드 기능 들어가야됨
@@ -20,20 +23,26 @@ const BudgetScreen = () => {
     // setKeyValue(keyValue[])
   };
 
+  const moneyAddHandler = () => {
+    localStorage.setItem("budget", keyValue);
+    console.log("예산 등록 성공:", keyValue);
+  };
+
   return (
     <div className="budget-wrap">
       <h3 className="budget-title">예산</h3>
-      <button
-        id="backSpace-button"
-        class="btn btn-light"
-        onClick={() => {
-          keyPadBackSpaceHandler();
-        }}
-      >
-        -
-      </button>
       <div className="result-number">{keyValue}</div>
+
       <div className="budget-container">
+        <button
+          id="backSpace-button"
+          class="btn btn-light"
+          onClick={() => {
+            keyPadBackSpaceHandler();
+          }}
+        >
+          -
+        </button>
         <div className="pad-container">
           <div className="key-pad">
             <button
@@ -154,10 +163,12 @@ const BudgetScreen = () => {
             </button>
           </div>
         </div>
+
         <button
-          id="next"
+          id="backSpace-button"
           onClick={() => {
-            window.location.href = "/3";
+            moneyAddHandler();
+            navigate("/3");
           }}
           class="btn btn-primary"
         >
