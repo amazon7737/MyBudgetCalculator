@@ -168,7 +168,7 @@ const BudgetScreen = () => {
           id="backSpace-button"
           onClick={() => {
             moneyAddHandler();
-            navigate("/3");
+            navigate("/2");
           }}
           class="btn btn-primary"
         >
