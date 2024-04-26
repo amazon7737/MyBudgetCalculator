@@ -168,9 +168,9 @@ const BudgetScreen = () => {
           id="backSpace-button"
           onClick={() => {
             moneyAddHandler();
-            // navigate("/2");
-            window.location.href =
-              "https://amazon7737.github.io/MyBudgetCalculator/2";
+            navigate("/2");
+            // window.location.href =
+            //   "https://amazon7737.github.io/MyBudgetCalculator/2";
           }}
           class="btn btn-primary"
         >
